@@ -9,7 +9,7 @@ resource "azurerm_virtual_machine" "test" {
   location              = "UK West"
   resource_group_name   = "deepti-rg"
   network_interface_ids = ["/subscriptions/3c4d3a6f-a203-48fd-8d99-85c25b48c45f/resourceGroups/deepti-rg/providers/Microsoft.Network/networkInterfaces/terraform-testing"]
-  vm_size               = "Standard_B2ls_v2"
+  vm_size               = "Standard_B2s"
   delete_os_disk_on_termination = true
   delete_data_disks_on_termination = true
 
