@@ -28,4 +28,7 @@ resource "azurerm_virtual_machine" "test" {
     admin_password = "Chicago12345"
 
   }
+  os_profile_linux_config {
+    disable_password_authentication = false
+  }
 }
